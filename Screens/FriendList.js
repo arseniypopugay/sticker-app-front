@@ -1,5 +1,6 @@
 import React from 'react';
 import {Image, StyleSheet, View, Text} from "react-native";
+import {Toolbar} from "react-native-material-ui";
 
 const styles = StyleSheet.create({
   container: {
@@ -27,6 +28,7 @@ class FriendList extends React.Component{
     render(){
         return (
             <View>
+
                 <Image
                     style={styles.tinyLogo}
                     source={{

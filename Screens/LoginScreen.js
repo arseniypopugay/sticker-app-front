@@ -13,14 +13,14 @@ class LoginScreen extends React.Component {
     render() {
 
         return (
-            <View>
+            <View style={{width: "75%"}}>
                 <Text style={{paddingBottom: 8}}>Login</Text>
                 <TextInput
                     style={{height: 25, borderColor: 'gray', borderWidth: 1, paddingBottom: 5}}
                     onChangeText={text => this.setState({login: text})}
                     value={this.state.login}
                 />
-                <Button primary text="Confirm" onPress={() => this.props.auth(this.state.login)}/>
+                <Button primary text="Confirm" style={{marginTop: 20, borderColor: "gray"}} onPress={() => this.props.auth(this.state.login)}/>
             </View>
         )
     }
